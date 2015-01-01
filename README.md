@@ -1,19 +1,27 @@
-Aden Tranter
-adentranter@gmail.com
 
-The purpose of this script is to create an html file which images from a squid access log.
+#What?
+The purpose of this script is to create an html file which images from a squid access log are loaded into img tags and outputed to standard html.
 
-    Copyright (C) 2013  Aden Tranter
+#How?
+To run this script its simple.
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+	python main.py -i /var/log/squid/access.log -o output.html 
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+To view all the options use the 
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	python main.py -h
+
+###Example output
+![Screenshot of example output](http://2.bp.blogspot.com/-WJH3TISCMEg/UO_0o8NIlPI/AAAAAAAAAD0/eUUC-Cu_U_o/s640/Screenshot+from+2013-01-11+21:16:01.png  "Screenshot of example output")
+
+
+#Advanced use?
+this command shows how you can tell how many images to load and what IP to look for.
+
+	python main.py -i /var/log/squid/access.log -o output.html -x <amount> -a <ip> 
+
+
+
+Copyright (C) 2014  Aden Tranter
+
+
